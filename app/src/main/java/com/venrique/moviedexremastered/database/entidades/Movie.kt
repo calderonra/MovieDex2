@@ -10,23 +10,23 @@ import java.io.Serializable
 data class Movie(
     @PrimaryKey
     @field:Json(name = "imdbID")
-    val id: String,
+    val id: String = "N/A",
     @field:Json(name = "Title")
-    val title: String,
+    val title: String = "N/A",
     @field:Json(name = "Year")
-    val year: String,
+    val year: String= "N/A",
     @field:Json(name = "Genre")
-    val genre: String,
+    val genre: String= "N/A",
     @field:Json(name = "Director")
-    val director: String,
+    val director: String= "N/A",
     @field:Json(name = "Poster")
-    val poster: String,
+    val poster: String= "N/A",
     @field:Json(name = "Rated")
-    val rating: String,
+    val rating: String= "N/A",
     @field:Json(name = "Plot")
-    val plot: String,
+    val plot: String= "N/A",
     @field:Json(name= "Runtime")
-    val duration: String
+    val duration: String= "N/A"
 
 
 ): Serializable
